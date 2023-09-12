@@ -3,79 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/main.css">
-    <!--<script src="js/script.js"></script>-->
+    <link rel="stylesheet" href="css/adaptive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/novigarot.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 
-    <script src="js/swiper.js"></script>
+    <script defer src="js/swiper.js"></script>
 
-    <title>Site</title>
+    <title>Akademia design</title>
 </head>
 <body>
 
     <div class="main">
+        <div class="header">
 
-        <div class="head_block">
+        <nav class="navbar">
+            <div class="container">
+              <div class="navbar__wrap">
+                <div class="hamb">
+                  <div class="hamb__field" id="hamb">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="#slider">Галерея</a></li>
+                    <li><a href="#video">Производство</a></li>
+                    <li><a href="#info">Информация</a></li>
+                    <li><a href="#office">Наш офис</a></li>
+                    <li><a href="#address">Адрес</a></li>
+                    <li>
+                        <div>
+                            <a href=""><img src="img/icon/telegram.jpg" alt="Телеграмм"></a>
+                            <a href=""><img src="img/icon/vk.jpg" alt="Вконтакте"></a>
+                            <a href=""><img src="img/icon/whatsapp.png" alt="Ватсап"></a>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="popup" id="popup"></div>
 
-            <div class="head_block__left">
-                <div class="head_block__left__title">AKADEMIA DESIGN</div>
-                <div class="head_block__left__block"></div>
 
-                <div class="head_block__left__content">
+
+
+        
+
+
+
+            <div class="header__left">
+                <h1 class="header__left__title">Akademia design</h1>
+                <div class="header__left__block"></div>
+
+                <div class="header__left__content">
                     <img src="img/header_img.jpg" alt="">
                 </div>
             </div>
 
-            <div class="head_block__right">
-                <div class="head_block__right__number">
-                    <p class="number_one">8 987 700 28 83</p>
-                    <p class="number_two">8 987 716 68 69</p>
+            <div class="header__right">
+                <div class="header__right__number">
+                    <a href="tel:8 987 700 28 83">8 987 700 28 83</a>
+                    <a href="tel:8 987 716 68 69">8 987 716 68 69</a>
                 </div>
 
-                <div class="head_block__right__content">
+                <div class="header__right__content">
 
-                    <div class="head_block__right__content__text">
-                        <p class="head_block__right__content__text_one">Создаем <br> дизайнерскую мебель</p>
-                        <p class="head_block__right__content__text_two">Реализуем любой ваш проект <br> на своем производстве</p>
+                    <div class="header__right__content__text">
+                        <p>Создаем <br> дизайнерскую мебель</p>
+                        <p>Реализуем любой ваш проект <br> на своем производстве</p>
                     </div>
+                    
 
-                    <!--
-                        <div class="head_block__right__content_img">
+                    <!--<div class="header__right__content_img">
                         <img src="img/logo.png" alt="">
                     </div>
                     -->
 
+
                 </div>
 
-                <div class="head_block__right__name" id="running_line">AKADEMIA DESIGN</div>
+                <div class="header__right__name" id="running_line">Akademia design </div>
 
-                <div class="head_block__right__messengers">
-                    <a href=""><img src="img/icon/telegram.jpg" alt=""></a>
-                    <a href=""><img src="img/icon/vk.jpg" alt=""></a>
-                    <a href=""><img src="img/icon/whatsapp.png" alt=""></a>
+                <div class="header__right__messengers">
+                    <a href=""><img src="img/icon/telegram.jpg" alt="Телеграмм"></a>
+                    <a href=""><img src="img/icon/vk.jpg" alt="Вконтакте"></a>
+                    <a href=""><img src="img/icon/whatsapp.png" alt="Ватсап"></a>
                 </div>
 
             </div>
         </div>
 
-        <div class="underline">
+        <hr class="underline">
 
-        </div>
-
-        <div class="slider_block">
-            <div class="slider_block_title">
+        <div class="slider">
+            <div class="slider__title" id="slider">
                 Проекты
             </div>
 
-            <div class="slider_block__swiper">
+            <div class="slider__swiper">
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide"><img src="img/2.0.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.1.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.2.png" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.3.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.4.png" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.5.png" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.6.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.7.jpg" alt="Мебель"></div>
+                        <div class="swiper-slide"><img src="img/2.8.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.9.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.10.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.11.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.12.jpg" alt="Прихожая"></div>
+                        <div class="swiper-slide"><img src="img/2.13.jpg" alt="Мебель"></div>
+                        <div class="swiper-slide"><img src="img/2.14.jpg" alt="Кухонный гарнирут"></div>
+                        <div class="swiper-slide"><img src="img/2.15.jpg" alt="Кухонный гарнирут"></div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -84,33 +133,64 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                 </div>
 
             </div>
         </div>
 
 
-        <div class="video_block">
-            <div class="video_block__title">ПРОИЗВОДСТВО</div>
-            <div class="video_block__content">
-                <div class="video_block__content__left_column">
+        <div class="video">
+            <div class="video__title" id="video">Производство</div>
+
+            <div class="video__content">
+                <p>
                     У нас европейское оборудование,
                     мы выбираем лучшие материалы и фурнитуру,
                     чтобы готовая мебель была высокого качества.
-                </div>
-                <div class="video_block__content__right_column">
+                </p>
+                <p>
                     Наше производство располагается в Йошкар-Оле,
                     наши мастера высоквалифицированные специалисты
                     реализуют ваши самые интересные идеи
-                </div>
+                </p>
+            </div>
+
+            <div class="video__teg">
+                <video controls>
+                    <source src="" />
+                </video>
+            </div>
+
+
+        </div>
+
+
+        <div class="info" id="info">
+            <div class="info__p">
+                <p>Создадим дизайн-проект под вашу планировку</p>
+                <p>Для этого необходимы план квартиры или дома, замер и фотографии объекта</p>
+                <p>Изготовим мебель для всей квартиры</p>
+                <p>Кухни, шкафы, гардеробные, детские и гостиные - всё это мы можем спроектировать и изготовить</p>
+                <p>Выдадим план электрики и сантехники</p>
+                <p>На этапе ремонта очень пригодятся эти планы, они помогут вам сделать всё правильно</p>
+                <p>Сотрудничаем с дизайнерами интерьера</p>
             </div>
         </div>
 
 
+        <div class="office" id="office">
+            <div class="office__title">наш шоу-рум</div>
+            <img src="img/header_img.jpg" alt="">
+        </div>
+        
 
+        <div class="address" id="address">
+            <div class="address__title">йошкар-ола рябинина 15, офис 10</div>
 
+            <div class="address__maps">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c5fffac8ae3c0c28a26565b798b21e4127571eef418e9650ddd14588dc7ca8b&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
 
 
     </div>
