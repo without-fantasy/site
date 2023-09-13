@@ -1,15 +1,23 @@
+:root {
+  --primary-color: #222;
+  --secondary-color: #b8b8b8;
+  --background-color: #fff;
+}
+
+
 @font-face {
-  font-family: "Sf Pro Display Regular";
+  font-family: "Sf Pro Display";
   src: url("../fonts/SFPRODISPLAYREGULAR.OTF");
 }
+
 @font-face {
-  font-family: "Sf Pro Display Italic";
+  font-family: "Sf Pro Display";
   src: url("../fonts/SFPRODISPLAYLIGHTITALIC.OTF");
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Sf Pro Display Bold";
+  font-family: "Sf Pro Display";
   src: url("../fonts/SFPRODISPLAYBOLD.OTF");
   font-weight: bold;
 }
@@ -72,7 +80,7 @@ hr {
   display: none;
 }
 
-.menu > li > a {
+.menu>li>a {
   text-decoration: none;
 }
 
@@ -80,31 +88,31 @@ hr {
   display: flex;
 }
 
-.navbar__wrap .menu > li {
+.navbar__wrap .menu>li {
   display: flex;
   align-items: stretch;
 }
 
-.navbar__wrap .menu > li > a {
+.navbar__wrap .menu>li>a {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--background-color);
 }
 
-.navbar__wrap .menu > li > a:hover {
-  color: rgba(255, 255, 255, 1);
+.navbar__wrap .menu>li>a:hover {
+  color: var(--background-color);
 }
 
 /*Header*/
 
 .header {
+  display: flex;
   width: 100%;
   max-height: 80vh;
   height: 100%;
-  background: black;
-  color: white;
-  display: flex;
+  background: var(--primary-color);
+  color: var(--background-color);
 }
 
 .header__left {
@@ -113,15 +121,14 @@ hr {
 
 .header__right {
   position: relative;
-  padding-left: 1.56vmax;
   width: 60%;
 }
 
 .header__left__title {
-  font-size: 2.083vmax;
   padding: 10px 0 0 40px;
-  color: #171717;
-  background-color: #b8b8b8;
+  font-size: 2.083vmax;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   text-transform: uppercase;
   z-index: 2;
 }
@@ -130,12 +137,13 @@ hr {
   position: absolute;
   width: 7.29vmax;
   height: 27.6vmax;
-  background: #b8b8b8;
+  background: var(--secondary-color);
   z-index: 1;
 }
 
 .header__left__content {
   position: relative;
+  display: flex;
 }
 
 .header__left__content::after {
@@ -164,7 +172,7 @@ hr {
 
 .header__right__number a {
   display: block;
-  color: #fefefe;
+  color: var(--background-color);
 }
 
 .header__right__number a:not(:first-child) {
@@ -189,7 +197,7 @@ hr {
 .header__right__name {
   margin-top: 5.2vmax;
   white-space: nowrap;
-  color: #323232;
+  color: var(--secondary-color);
   overflow: hidden;
   font-size: 10.1vmax;
   text-transform: uppercase;
@@ -207,39 +215,31 @@ hr {
   width: 1.6vmax;
 }
 
-/*Полоса под header*/
-
-.underline {
-  background: #181818;
-  height: 9vh;
-}
-
 /*Слайдер*/
 
 .slider {
   width: 100%;
-  background: #b8b8b8;
+  background: var(--background-color);
+  padding: 3vmax 0 7vmax 0;
 }
 
 .slider__title {
   text-align: center;
   font-size: 3.75vmax;
   text-transform: uppercase;
-  color: #0e0e0e;
-  padding-top: 1.875vmax;
-  padding-bottom: 1.57vmax;
+  color: var(--primary-color);
+  margin-bottom: 2vmax;
 }
 
 swiper-container {
-  width: 36.4vmax;
+  width: 50%;
   height: 29.1vmax;
-  padding-bottom: 3.38vmax;
 }
 
 swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,66 +250,67 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: #323232;
+  background: var(--secondary-color);
 }
 
 /*Видер-блок*/
 
 .video {
-  background: #0e0e0e;
-  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--background-color);
+  padding: 3vmax 0 7vmax 0;
 }
 
 .video__title {
   text-align: center;
-  padding-top: 2vmax;
   font-size: 3.75vmax;
   padding-bottom: 1.8vmax;
   text-transform: uppercase;
 }
 
-.video__content {
+.video__text-content {
   display: flex;
   font-size: 18px;
   width: 85%;
   margin: 0 auto;
+  word-wrap: break-word;
 }
 
-.video__content p {
+.video__text-content p {
   margin: 0 auto;
   width: 50%;
 }
 
-.video__content p:nth-child(2n) {
+.video__text-content p:nth-child(2n) {
   padding-left: 30px;
 }
 
-.video__tag {
+.video__content {
+  margin: 0 auto;
   margin-top: 4.17vmax;
-  text-align: center;
-  padding-bottom: 3.17vmax;
-}
-
-.video__tag iframe {
   width: 50%;
   height: 26vw;
+  border: none;
 }
 
 /*Текст*/
 
 .info {
-  padding: 1.56vmax 0 1.56vmax 0;
-  background: #b8b8b8;
+  padding: 3vmax 0 7vmax 0;
+  background: var(--secondary-color);
   font-size: 18px;
 }
 
-.info__p {
+.info__content {
   width: 65%;
   margin: 0 auto;
 }
 
 .info p:nth-child(odd) {
-  padding-bottom: 1.3vmax;
+  padding-bottom: 3px;
   font-weight: bold;
 }
 
@@ -324,7 +325,7 @@ swiper-slide img {
 /*Офис*/
 
 .office {
-  background: #0e0e0e;
+  background: var(--primary-color);
   color: #fefefe;
   text-align: center;
 }
@@ -344,19 +345,12 @@ swiper-slide img {
 /*Карта*/
 
 .address {
-  background: #b8b8b8;
-  color: #0e0e0e;
+  background: var(--background-color);
+  color: var(--primary-color);
   text-align: center;
 }
 
-.address__title {
-  font-size: 3.75vmax;
-  padding: 1.82vmax 0;
-  text-transform: uppercase;
-}
-
-.address__maps iframe {
+.address__map {
+  width: 100%;
   border: none;
-  width: 99%;
-  padding-bottom: 1.56vmax;
 }
