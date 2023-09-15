@@ -1,9 +1,10 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs';
-
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     preloadImages: false,
     loop: true,
     lazy: true,
-    grabCursor: true
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+    },
 });
